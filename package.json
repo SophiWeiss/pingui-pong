@@ -2,7 +2,7 @@
   "name": "pingui_pong",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SophiWeiss.github.io/pingui_pong/",
+  "homepage": "https://sophiweiss.github.io/pingui-pong/",
   "dependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
