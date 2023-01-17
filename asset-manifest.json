@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pingui_pong/static/css/main.229a2063.css",
+    "main.js": "/pingui_pong/static/js/main.42c0c804.js",
+    "index.html": "/pingui_pong/index.html",
+    "main.229a2063.css.map": "/pingui_pong/static/css/main.229a2063.css.map",
+    "main.42c0c804.js.map": "/pingui_pong/static/js/main.42c0c804.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.229a2063.css",
+    "static/js/main.42c0c804.js"
+  ]
+}
