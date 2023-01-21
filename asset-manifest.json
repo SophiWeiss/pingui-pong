@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pingui-pong/static/css/main.229a2063.css",
-    "main.js": "/pingui-pong/static/js/main.42c0c804.js",
+    "main.css": "/pingui-pong/static/css/main.abb19813.css",
+    "main.js": "/pingui-pong/static/js/main.030c4afd.js",
     "index.html": "/pingui-pong/index.html",
-    "main.229a2063.css.map": "/pingui-pong/static/css/main.229a2063.css.map",
-    "main.42c0c804.js.map": "/pingui-pong/static/js/main.42c0c804.js.map"
+    "main.abb19813.css.map": "/pingui-pong/static/css/main.abb19813.css.map",
+    "main.030c4afd.js.map": "/pingui-pong/static/js/main.030c4afd.js.map"
   },
   "entrypoints": [
-    "static/css/main.229a2063.css",
-    "static/js/main.42c0c804.js"
+    "static/css/main.abb19813.css",
+    "static/js/main.030c4afd.js"
   ]
 }
