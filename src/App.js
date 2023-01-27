@@ -1,12 +1,42 @@
-import './App.css';
+import React from 'react'
+import {StartWindow, ChangeColorsWindow} from './Window'
 
-function App() {
-  return <div className="App">
-    <h1 className="h1">PINGUI PONG</h1>
-    <p className="p">This is my<strong> Pingui Pong</strong>, in this menu u can change colors as <strong>your ass</strong> wants to!</p>
-    <button className="button">PLAY</button>
-    <button className="button">CHANGE COLORS</button>
-  </div>
+class App extends React.Component{
+
+  constructor(props) {
+    super(props);
+
+    this.gameStates = {
+      START: 0,
+      CHANGE_COLORS: 1
+    }
+
+    this.state = {
+      gameState: this.gameStates.START
+    }
+  }
+
+  setGameState = gameState => {
+    this.setState({gameState: gameState})
+  }
+
+  render() {
+
+    const gameState = this.state.gameState
+    const gameStates = this.gameStates
+
+    return (
+      <>
+        {gameState === gameStates.START &&
+          <StartWindow onClick={() => this.setGameState(gameStates.CHANGE_COLORS)}/>
+        }
+        {gameState === gameStates.CHANGE_COLORS &&
+          <ChangeColorsWindow onClick={() => this.setGameState(gameStates.START)}/>
+        }
+      </>
+    );
+  }
+
 }
 
-export default App;
+export default App
