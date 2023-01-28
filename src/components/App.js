@@ -1,9 +1,9 @@
 import React from 'react'
 import StartWindow from './StartWindow.js'
-import {ChangeColorsWindow} from "./ChangeColorsWindow";
+import ChangeColorsWindow from "./ChangeColorsWindow";
 import './App.css'
 
-class App extends React.Component{
+export default class App extends React.Component{
 
   constructor(props) {
     super(props);
@@ -18,15 +18,13 @@ class App extends React.Component{
     }
   }
 
-  setGameState = argGameState => {
-    this.setState({gameState: argGameState})
+  setGameState = gameStateArg => {
+    this.setState({gameState: gameStateArg})
   }
 
   render() {
-
     const gameState = this.state.gameState
     const gameStates = this.gameStates
-
     return (
       <>
         {gameState === gameStates.START &&
@@ -40,5 +38,3 @@ class App extends React.Component{
   }
 
 }
-
-export default App

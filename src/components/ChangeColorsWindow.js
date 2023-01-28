@@ -23,7 +23,7 @@ function ColorsControl({colorMap}) {
   )
 }
 
-export function ChangeColorsWindow({onBackButtonClick}) {
+export default function ChangeColorsWindow({onBackButtonClick}) {
   return (
     <Window showBackButton={true} onBackButtonClick={onBackButtonClick}>
       <h1>CHANGE COLORS</h1>
