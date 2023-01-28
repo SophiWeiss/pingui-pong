@@ -61,17 +61,3 @@
 .window .back-button img {
   height: 23px;
 }
-
-.window .buttons-row {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.window .color-control-button {
-  width: 209px;
-  height: 57px;
-  font-size: 20px;
-}

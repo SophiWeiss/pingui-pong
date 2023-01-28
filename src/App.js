@@ -1,5 +1,6 @@
 import React from 'react'
-import {StartWindow, ChangeColorsWindow} from './Window'
+import StartWindow from './StartWindow.js'
+import {ChangeColorsWindow} from "./ChangeColorsWindow";
 
 class App extends React.Component{
 
@@ -28,10 +29,10 @@ class App extends React.Component{
     return (
       <>
         {gameState === gameStates.START &&
-          <StartWindow onClick={() => this.setGameState(gameStates.CHANGE_COLORS)}/>
+          <StartWindow onChangeColorsButtonClick={() => this.setGameState(gameStates.CHANGE_COLORS)}/>
         }
         {gameState === gameStates.CHANGE_COLORS &&
-          <ChangeColorsWindow onClick={() => this.setGameState(gameStates.START)}/>
+          <ChangeColorsWindow onBackButtonClick={() => this.setGameState(gameStates.START)}/>
         }
       </>
     );
