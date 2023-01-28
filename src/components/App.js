@@ -1,6 +1,7 @@
 import React from 'react'
 import StartWindow from './StartWindow.js'
 import {ChangeColorsWindow} from "./ChangeColorsWindow";
+import './App.css'
 
 class App extends React.Component{
 

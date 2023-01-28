@@ -1,5 +1,5 @@
 import Window from './Window'
-import {getGradientStyle} from "./colors";
+import {getGradientStyle} from "../colors";
 import './StartWindow.css'
 
 function StartWindowButton({onClick, children}) {

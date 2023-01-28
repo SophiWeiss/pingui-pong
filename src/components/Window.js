@@ -1,5 +1,5 @@
 import React from 'react'
-import {getGradientStyle} from './colors';
+import {getGradientStyle} from '../colors';
 import './Window.css'
 
 export default function Window({showBackButton, onBackButtonClick, children}) {
