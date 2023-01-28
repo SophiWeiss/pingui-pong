@@ -1,17 +1,9 @@
 :root {
-  'primary-color': none,
-  'secondary-color': none,
-}
-
-body {
-'text-color': none,
-'background-color': none,
-'primary-button-color': none,
-'secondary-button-color': none
-}
-
-.game-screen {
-  'ball-color': none,
-  'brick-color': none,
-  'racket-color': none
+  --text-color: none;
+  --background-color: none;
+  --primary-button-color: none;
+  --secondary-button-color: none;
+  --ball-color: none;
+  --brick-color: none;
+  --racket-color: none;
 }
