@@ -1,0 +1,14 @@
+.window .buttons-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.window .color-control-button {
+  width: 209px;
+  height: 57px;
+  font-size: 20px;
+  margin: 8px;
+}
