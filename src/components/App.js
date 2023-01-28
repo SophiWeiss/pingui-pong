@@ -18,8 +18,8 @@ class App extends React.Component{
     }
   }
 
-  setGameState = gameState => {
-    this.setState({gameState: gameState})
+  setGameState = argGameState => {
+    this.setState({gameState: argGameState})
   }
 
   render() {
