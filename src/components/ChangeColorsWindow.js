@@ -1,5 +1,5 @@
 import Window from './Window';
-import {getGradientStyle, colorMap} from '../colors';
+import {getGradientStyle, colorMapPreview, colorRowLengths} from '../colors';
 import './ChangeColorsWindow.css'
 
 function ColorsControlButton({colors, children}) {
@@ -11,11 +11,25 @@ function ColorsControlButton({colors, children}) {
   )
 }
 
-function ColorsControl({colorMap}) {
-  return colorMap.map((colorsRow, colorsRowIdx) =>
+function ColorsControl() {
+
+  const colorRows = []
+  let colorMapEntries = Object.entries(colorMapPreview)
+
+  let rowLength
+  let rowLengthIdx = 0
+  let i = 0
+  while (i < colorMapEntries.length) {
+    rowLength = colorRowLengths[rowLengthIdx % colorRowLengths.length]
+    colorRows.push(colorMapEntries.slice(i, i + rowLength))
+    i += rowLength
+    rowLengthIdx++
+  }
+
+  return colorRows.map((colorsRow, colorsRowIdx) =>
     <div key={colorsRowIdx} className='buttons-row'>{
-      Object.keys(colorsRow).map((colorName, colorsIdx) =>
-        <ColorsControlButton key={colorsIdx} colors={colorsRow[colorName]}>
+      colorsRow.map(([colorName, colors], colorsIdx) =>
+        <ColorsControlButton key={colorsIdx} colors={colors}>
           {colorName}
         </ColorsControlButton>
       )
@@ -27,7 +41,7 @@ export default function ChangeColorsWindow({onBackButtonClick}) {
   return (
     <Window showBackButton={true} onBackButtonClick={onBackButtonClick}>
       <h1>CHANGE COLORS</h1>
-      <ColorsControl colorMap={colorMap}/>
+      <ColorsControl/>
     </Window>
   )
 }

@@ -1,17 +1,17 @@
 import React from 'react'
 
-class Canvas extends React.Component {
+class Game extends React.Component {
 
   constructor (props) {
     super(props);
   }
 
-  updateCanvas () {
+  updateCanvas = () => {
 
   }
 
   render () {
-    return (Canvas);
+    return <canvas/>;
   }
 
 }

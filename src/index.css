@@ -13,3 +13,12 @@ body {
 button {
   font: inherit;
 }
+
+:root {
+  --text-color: none;
+  --secondary-text-color: none;
+  --background-color: none;
+  --secondary-background-color: none;
+  --primary-color: none;
+  --secondary-color: none;
+}

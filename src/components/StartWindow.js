@@ -4,7 +4,7 @@ import './StartWindow.css'
 
 function StartWindowButton({onClick, children}) {
   return (
-    <button onClick={onClick} style={getGradientStyle(['#993955', '#8b85c1', '#993955'])}>
+    <button onClick={onClick} style={getGradientStyle(['#993955', '#8b85c1'])}>
       {children}
     </button>
   )
