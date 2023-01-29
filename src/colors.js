@@ -52,3 +52,13 @@ export function getGradientStyle(colors) {
   )
   return {backgroundImage: `linear-gradient(45deg, ${colorsWithPercentage.join(', ')})`}
 }
+
+export function setColorSchema(colorName) {
+  const root = document.documentElement
+  getComputedStyle(root).setProperty('--text-color', colorMap[colorName][0])
+  getComputedStyle(root).setProperty('--secondary-text-color', colorMap[colorName][1])
+  getComputedStyle(root).setProperty('--background-color', colorMap[colorName][2])
+  getComputedStyle(root).setProperty('--secondary-background-color', colorMap[colorName][3])
+  getComputedStyle(root).setProperty('--primary-color', colorMap[colorName][4])
+  getComputedStyle(root).setProperty('--secondary-color', colorMap[colorName][5])
+}
